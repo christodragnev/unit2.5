@@ -11,9 +11,13 @@ black = Color(0x000000,1)
 
 blackOutline = LineStyle(1,black)
 
-redRectangle = RectangleAsset(300,200,blackOutline,red)
 
-Sprite(redRectangle)
+blueTriangle = PolygonAsset([(0,100), (75,0), (150,100)], blackOutline, blue) #endpoints,
+redRectangle = RectangleAsset(150,100,blackOutline,red)
+redRectangle1 = RectangleAsset(25,50,blackOutline,red)
 
+Sprite(redRectangle,(100,100))
+Sprite(blueTriangle,(100,0))
+Sprite(redRectangle1,(160,150))
 App().run()
 
